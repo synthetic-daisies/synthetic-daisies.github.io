@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Add blue background color with some padding */
+body {
+  font-family: Charcoal;
+  padding: 20px;
+  background: #d1c924;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #d1c924;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  background: #db6b3f;
+}
+/* Right column */
+.rightcolumn {   
+  float: right;
+  width: 75%;
+  background: #db6b3f;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #db6b3f;
+  width: 100%;
+  padding: 20px;
+}
+/* Add a card effect for articles */
+.card {
+   background-color: #db6b3f;
+   padding: 10px;
+   margin-top: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #d1c924;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <IMG SRC="https://user-images.githubusercontent.com/38323286/60196386-9e051300-9802-11e9-907f-c447efc0d137.png" HEIGHT = 179 WIDTH = 840>
+</div>
+<div class="row">
+  <div class="rightcolumn">
+    <div class="card">
+	<CENTER><B>
+Here is a series called Popular Algorithmics, originally featured on Tumbld Thoughts. A tour of various algorithmic approaches, highlighted with useful links.<br />
+  </CENTER></B>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-a8ThcPrGR-s/U1FfwkdbNpI/AAAAAAAAG3s/I68J8nd-wzs/s1600/tumblr_n47is7W9bw1ru0x63o2_1280.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-a8ThcPrGR-s/U1FfwkdbNpI/AAAAAAAAG3s/I68J8nd-wzs/s1600/tumblr_n47is7W9bw1ru0x63o2_1280.png" height="376" width="400" /></a></div>
+<br />
+The <a href="http://en.wikipedia.org/wiki/RANSAC">RANSAC</a> (Random Sample Consensus) Algorithm [1, 2] is an adaptive method to detect outliers by dividing the sample datapoints into "inliers" and "outliers". Treated in this way, the data can be incorporated into a model that exhibits minimial error. RANSAC is also robust to outliers, which might be useful for dealing with heavy-tailed and other non-normal (e.g. Gaussian) distributions.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/-mN3tOsWW3E8/U1Ff9bZAs_I/AAAAAAAAG30/wlwOjVdsEJk/s1600/tumblr_n47is7W9bw1ru0x63o1_1280.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-mN3tOsWW3E8/U1Ff9bZAs_I/AAAAAAAAG30/wlwOjVdsEJk/s1600/tumblr_n47is7W9bw1ru0x63o1_1280.png" height="288" width="400" /></a></div>
+<br />
+RANSAC was developed for and used extensively in computer vision research [3]. A MATLAB toolbox specialized for image processing, but possibly amenable to other applications [4], is available from the MATLAB Exchange [3].<br />
+<br />
+[1] Zuliani, M. &nbsp; <a href="http://vision.ece.ucsb.edu/~zuliani">RANSAC for Dummies</a>. August 13 (2012).<br />
+<br />
+[2] Second picture is from: Zaman, T. &nbsp; <a href="http://www.timzaman.com/?p=190">[3D] Ransac (get planes from point clouds)</a>. March 23 (2011).<br />
+<br />
+[3] <a href="http://stackoverflow.com/questions/4655334/ransac-algorithm">RANSAC Algorithm for Image Processing</a>. Stack Overflow (2011).<br />
+<br />
+[4] Kowdle, A. &nbsp; <a href="http://www.docstoc.com/docs/52036670/Parallel-implementation-of-RAndom-SAmple-Consensus-(RANSAC)">Parallel implementation of RAndom SAmple Consensus (RANSAC)</a>. Docstoc (2010).<br />
+<br />
+[5] Chen, H. &nbsp; <a href="http://www.mathworks.com/matlabcentral/linkexchange/links/1814-ransac-toolbox">RANSAC Toolbox</a>. MATLAB Toolbox (2009).<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/--M8x1caOtIY/U1HUNE-6n9I/AAAAAAAAG4Y/ABzZXmB4uBU/s1600/pop-algorithms.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/--M8x1caOtIY/U1HUNE-6n9I/AAAAAAAAG4Y/ABzZXmB4uBU/s1600/pop-algorithms.png" height="268" width="400" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+Here are links to a feature by <a href="http://www.cs.unm.edu/~ackley/">David Ackley (University of New Mexico)</a> on <a href="http://www.cs.unm.edu/~ackley/#rh-be">robust-first computing</a> in this month's <a href="http://cacm.acm.org/">Communications of the ACM</a> [1]. The argument: computing systems were originally designed to optimize efficiency (rather than robustness or adaptability), but at a cost of normal operation under novel or unexpected circumstances [2].<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-NE2aswCPibU/U1HSKsGpmPI/AAAAAAAAG4E/BM5TQTi06zo/s1600/tumblr_mu21dzOndh1ru0x63o1_1280.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-NE2aswCPibU/U1HSKsGpmPI/AAAAAAAAG4E/BM5TQTi06zo/s1600/tumblr_mu21dzOndh1ru0x63o1_1280.png" height="400" width="233" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+In this <a href="http://www.youtube.com/watch?v=7hwO8Q_TyCA">YouTube video</a>, Ackley uses a <a href="http://en.wikipedia.org/wiki/Bubble_sort">bubblesort algorithm</a> and alien symbols (e.g. unlabeled data) to demonstrate how and when a robust-first computing system can outperform systems designed using efficiency-first principles (e.g. your computer). This area of research also has broader implications for <a href="http://syntheticdaisies.blogspot.com/search?q=non-optimality">understanding social and biological systems</a>.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-eoMmocO-0as/U1HSTLhlsII/AAAAAAAAG4M/VXdcXk-GHXI/s1600/tumblr_mu21dzOndh1ru0x63o2_1280.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-eoMmocO-0as/U1HSTLhlsII/AAAAAAAAG4M/VXdcXk-GHXI/s1600/tumblr_mu21dzOndh1ru0x63o2_1280.jpg" height="160" width="400" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+[1] Ackley, D. &nbsp; Viewpoint: Beyond Efficiency. Communications of the ACM, October (2013). <a href="http://nm8.us/1">Open-access version here</a>.<br />
+<br />
+[2] Posey, B.M. &nbsp; <a href="http://technet.microsoft.com/en-us/library/cc750081.aspx">Demystifying the "Blue Screen of Death"</a>. Microsoft TechNet <b>AND</b> <a href="http://www.howtogeek.com/90458/use-a-windows-blue-screen-of-death-for-your-wordpress-404-error-page/">Use a Windows Blue Screen of Death for Your WordPress 404 Error Page</a>. How-to Geek.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-L4up7xh7-BQ/U1HVAUegkGI/AAAAAAAAG4g/1SGZmeP0DVk/s1600/tumblr_msywmtJdkq1ru0x63o1_r1_1280.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-L4up7xh7-BQ/U1HVAUegkGI/AAAAAAAAG4g/1SGZmeP0DVk/s1600/tumblr_msywmtJdkq1ru0x63o1_r1_1280.png" height="400" width="353" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both;">
+Here are a few recent articles on the process and blind spots of applying algorithms to real-world problems. In [1], <a href="http://www.wired.com/wiredscience/author/rhettallain/">Rhett Allain</a> discusses the role of <a href="http://en.wikipedia.org/wiki/Random_walk">random walk theory</a> in modeling how two lost people find each other in a forest (or perhaps two ships in the night).</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+In [2], the <a href="http://en.wikipedia.org/wiki/NP-hard">NP-hard</a> nature of the <a href="http://en.wikipedia.org/wiki/Traveling_salesman_problem">travelling salesman problem</a> (TSP) is discussed in the context of <a href="http://en.wikipedia.org/wiki/Logistics">logistics</a> optimization. And to spice things up (or top them off), the author of [3] finds analogies between the process of <a href="http://en.wikipedia.org/wiki/Algorithm">algorithmics</a> and the process of baking.&nbsp;</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+[1] Allain, R. &nbsp; <a href="http://www.wired.com/wiredscience/2013/09/two-statisticians-lost-in-the-woods/">How Should Two Lost People Find Each Other?</a> Wired Science Dot Physics blog, September 10 (2013).</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+[2] Vanderbilt, T. &nbsp; <a href="http://nautil.us/issue/3/in-transit/unhappy-truckers-and-other-algorithmic-problems">Unhappy truckers and other algorithmic problems</a>. Nautil.us magazine, Issue 003 (2013).</div>
+<div class="separator" style="clear: both;">
+<br /></div>
+<div class="separator" style="clear: both;">
+[3] Hromkovic, J. &nbsp; <a href="http://link.springer.com/chapter/10.1007%2F978-3-540-85986-4_2">Algorithmics, or What Have Programming and Baking in Common?</a> In "Algorithmic Adventures". pp. 37-71, Springer (2009).</div>
+<div style="text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-KERoQzDO4kw/U1HZMmGuhmI/AAAAAAAAG5A/qhxVTSWtKYk/s1600/pop-algorithms.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-KERoQzDO4kw/U1HZMmGuhmI/AAAAAAAAG5A/qhxVTSWtKYk/s1600/pop-algorithms.png" height="268" width="400" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+Here are some papers on shark genomes and machine learning. First up is a paper [1] in which the <i>Callorhinchus milii</i> genome is sequenced and analyzed in an evolutionary framework. Possesses the slowest evolving vertebrate genome. The study also clarifies the phylogeny of chordates, and offers the intrepid reader 250 pages of supplemental material.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-T-4GrrPotgI/U1HWyXJ5z4I/AAAAAAAAG4s/YMfsuewgJVI/s1600/tumblr_mztdfmsvyk1ru0x63o1_400.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-T-4GrrPotgI/U1HWyXJ5z4I/AAAAAAAAG4s/YMfsuewgJVI/s1600/tumblr_mztdfmsvyk1ru0x63o1_400.png" height="400" width="216" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+The second article and associated YouTube video [2, 3] explore the potential of deep learning, which perfect the art of AI as pattern recognition. Deep learning does increasingly better as data is added to the model. This overcomes the typical sigmoidal learning curve that characterizes traditional neural nets. But is the biological metaphor (learning machine as human brain) sufficient to push AI research to the next plateau?<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-rD-1gfehwNw/U1HW6sCnqNI/AAAAAAAAG40/7E7TZJ6I4Q0/s1600/tumblr_mztdfmsvyk1ru0x63o2_1280.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-rD-1gfehwNw/U1HW6sCnqNI/AAAAAAAAG40/7E7TZJ6I4Q0/s1600/tumblr_mztdfmsvyk1ru0x63o2_1280.jpg" height="400" width="283" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+<br />
+[1] Venkatesh, B. et.al &nbsp; <a href="http://www.nature.com/nature/journal/v505/n7482/full/nature12826.html">Elephant shark genome provides unique insights into gnathosome evolution</a>. Nature, doi:10.1038/nature12826 (2014).<br />
+<br />
+[2] Jones, N. &nbsp; <a href="http://www.nature.com/news/computer-science-the-learning-machines-1.14481">The Learning Machines</a>. Nature, 505, 146-148 (2014).<br />
+<br />
+[3] Hinton, G. &nbsp; <a href="http://www.youtube.com/watch?v=VdIURAu1-aU">Recent Developments in Deep Learning</a>. Google TechTalks, March 19 (2010).<br />
+<br />
+<div style="text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-NzWwStgj_cg/U1H2GEB886I/AAAAAAAAG6I/-j3VFt78GG8/s1600/pop-algo.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-NzWwStgj_cg/U1H2GEB886I/AAAAAAAAG6I/-j3VFt78GG8/s1600/pop-algo.png" height="400" width="400" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+Here are a few readings and examples of the Hydra game [1-4]. This game play resembles <a href="http://dimacs.rutgers.edu/Workshops/Tree/ME.ppt">fast OLS and other tree-swapping phylogenetic reconstruction methods</a>, but is a one player "<a href="http://www.cs.cornell.edu/gomes/papers/UAI2010_ermon-et-al.pdf">game against nature</a>" that pits an autonomous player (who cuts off nodes one at a time) against a tree structure (that randomly generates new branches in response). This occurs much as it does in the <a href="http://en.wikipedia.org/wiki/Lernaean_Hydra">ancient Greek myth of the Hydra</a>.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-iCQvx50p08c/U1H2ALNfz7I/AAAAAAAAG6A/1Vj5xpjii7U/s1600/tumblr_n345cpQWm01ru0x63o1_400.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-iCQvx50p08c/U1H2ALNfz7I/AAAAAAAAG6A/1Vj5xpjii7U/s1600/tumblr_n345cpQWm01ru0x63o1_400.png" height="218" width="320" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-l1lU0vUZIB8/U1H1A3q2qFI/AAAAAAAAG5k/ASb1gGvAkNo/s1600/tumblr_n345cpQWm01ru0x63o2_400.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-l1lU0vUZIB8/U1H1A3q2qFI/AAAAAAAAG5k/ASb1gGvAkNo/s1600/tumblr_n345cpQWm01ru0x63o2_400.png" height="218" width="320" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-fg12FdlWMJY/U1H1FhXjoKI/AAAAAAAAG5s/xIrcjTSLe9k/s1600/tumblr_n345cpQWm01ru0x63o3_400.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-fg12FdlWMJY/U1H1FhXjoKI/AAAAAAAAG5s/xIrcjTSLe9k/s1600/tumblr_n345cpQWm01ru0x63o3_400.png" height="218" width="320" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+The interesting thing about this game is that the player cannot lose. Yet, in its pure form, neither can that player win. Rather, play continues infinitely until someone gives up -- according to a recent Quora post [3], it is one of the most counterintuitive results in Mathematics.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-LkxwrctxIGA/U1H1MfUyx9I/AAAAAAAAG50/moaVd31qlxs/s1600/tumblr_n345cpQWm01ru0x63o4_1280.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-LkxwrctxIGA/U1H1MfUyx9I/AAAAAAAAG50/moaVd31qlxs/s1600/tumblr_n345cpQWm01ru0x63o4_1280.jpg" height="266" width="400" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+[1] Bauer, A. &nbsp; <a href="http://math.andrej.com/2008/02/02/the-hydra-game/">The Hydra Game</a>. Mathematics and Computation blog, February 2 (2008).<br />
+<br />
+[2] Kirby, L. and Paris, J. &nbsp; <a href="http://www.cs.tau.ac.il/~nachumd/term/Kirbyparis.pdf">Accessible Independence Results for Peano Arithmetic</a>. Bulletin of the London Mathematical Society, 14, 285-293 (1982).<br />
+<br />
+[3] <a href="http://www.quora.com/Mathematics/What-are-some-of-the-most-counterintuitive-mathematical-results">Mathematics: what are some of the most counterintuitive mathematical results?</a> Quora, March 27 (2014).<br />
+<br />
+[4] <a href="http://math.andrej.com/wp-content/uploads/2008/02/Hydra/hydraApplet.html">JAVA Application: Hydra game</a>. Mathematics and Computation blog.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-wv24dP7gwVM/U3gaLIcPTuI/AAAAAAAAHD8/xGWtwM3iQ58/s1600/tumblr_n5pehftz9X1ru0x63o1_1280.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-wv24dP7gwVM/U3gaLIcPTuI/AAAAAAAAHD8/xGWtwM3iQ58/s1600/tumblr_n5pehftz9X1ru0x63o1_1280.png" height="376" width="400" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: left;">
+&nbsp;
+
+
+ 
+ 
+ 
+ <style type="text/css">
+ <!--
+  @page { margin: 0.79in }
+  P { margin-bottom: 0.08in }
+  A:link { so-language: zxx }
+ </style>
+ </div>
+<br />
+<div style="margin-bottom: 0in;">
+In this installment of Popular
+Algorithmics, I present a short reading list covering a data
+structure called the <a href="http://en.wikipedia.org/wiki/Bloom_filter">Bloom
+filter</a>. The Bloom filter [1] is a complex probabilistic hash function
+(e.g. maps semantic data to quantitative parameters) with a
+membership query mechanism [2]. This is good for any kind of
+set-based classification. In general, Bloom filters (particularly the
+Murmur algorithm) are more efficient than the cryptographic hash used
+in applications such as Bitcoin.</div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: center;">
+&nbsp;
+
+
+ 
+ 
+ 
+ <style type="text/css">
+ <!--
+  @page { margin: 0.79in }
+  P { margin-bottom: 0.08in }
+  A:link { so-language: zxx }</style><a href="http://2.bp.blogspot.com/-d201bdSW4T8/U3gadu-8guI/AAAAAAAAHEE/iSbNjI_ZznE/s1600/tumblr_n5pehftz9X1ru0x63o2_1280.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-d201bdSW4T8/U3gadu-8guI/AAAAAAAAHEE/iSbNjI_ZznE/s1600/tumblr_n5pehftz9X1ru0x63o2_1280.png" height="266" width="400" /></a></div>
+<style type="text/css"><!--
+  @page { margin: 0.79in }
+  P { margin-bottom: 0.08in }
+  A:link { so-language: zxx }
+ </style>
+ <br />
+<br />
+<div style="margin-bottom: 0in;">
+The probabilistic aspect of Bloom
+filters mean that there is a deterministic false positive rate, which
+can be tuned using a known number of input elements and hash
+functions. Bloom filters can be applied to many types of problems,
+including probabilistic verification [3] and bioinformatics [4].</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+[1] Broder, A. and Mitzenmacher, M. &nbsp; <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.20.98">Network Applications of Bloom Filters: A Survey</a>. Internet Mathematics, 1(4), 485-509 (2003).<br />
+<div>
+<br /></div>
+</div>
+<div style="margin-bottom: 0in;">
+[2] Holmes, A.   Hadoop in Practice.
+Manning Press (2012).</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+[3] Dillinger, P.C. and Monolios, P.  
+<a href="http://link.springer.com/chapter/10.1007%2F978-3-540-30494-4_26">Bloom
+Filters in Probabilistic Verification</a>. Lecture Notes in Computer
+Science, 3312, 367-381 (2004).</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+[4] Stranneheim, H., Kaller, M.,
+Allander, T., Andersson, B., Arvestad, L., and Lundeberg, J.
+<a href="http://www.ncbi.nlm.nih.gov/pubmed/20472541">Classification
+of DNA sequences using Bloom filters</a>. Bioinformatics, 26(13),
+1595-1600 (2010).</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+<b>Reading List:</b></div>
+<div style="margin-bottom: 0in;">
+Ellis, J.   <a href="http://spyced.blogspot.com/2009/01/all-you-ever-wanted-to-know-about.html">All
+you ever wanted to know about Bloom filters</a>. Spyced blog, January
+28 (2009).</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+Ksankar   <a href="http://doubleclix.wordpress.com/2013/04/14/is-our-neocortex-a-giant-semantic-bloom-filter-of-natural-intelligence-machine-learning-jeff-hawkins/">Is
+our Neocortex a Giant Semantic Bloom Filter? Of Natural Intelligence,
+Machine Learning, and Jeff Hawkins</a>. My Missives blog, April 14
+(2013).</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+<a href="http://billmill.org/bloomfilter-tutorial/">Bloom
+Filters by Example</a>. Bill Mill blog. <a href="https://github.com/balicea/bloomfilter-tutorial">Github
+fork</a>.</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+<a href="http://hur.st/bloomfilter?n=4&amp;p=1.0E-20">Bloom
+Filter calculator.</a></div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+<a href="http://www.homolog.us/blogs/blog/2014/05/08/barcode-fast-lossless-compression-via-cascading-bloom-filters/">BARCODE:
+Fast Lossless Compression via Cascading Bloom Filters.</a> Homolog.us
+blog, May 8 (2014).</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+<a href="http://stackoverflow.com/questions/4282375/what-is-the-advantage-to-using-bloom-filters">What
+is the Advantage to Using Bloom Filters?</a> StackOverflow.</div>
+<div style="margin-bottom: 0in;">
+<br /></div>
+<div style="margin-bottom: 0in;">
+Davies, J.   <a href="http://www.jasondavies.com/bloomfilter/">Bloom
+Filters Overview</a>. Jason Davies blog.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-6MZK_mNKnH8/U-gIxkEkHzI/AAAAAAAAHc8/zkJS7QnQcVg/s1600/tumblr_n9gfoa63FR1ru0x63o2_500.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-6MZK_mNKnH8/U-gIxkEkHzI/AAAAAAAAHc8/zkJS7QnQcVg/s1600/tumblr_n9gfoa63FR1ru0x63o2_500.jpg" height="135" width="400" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+This installment of Popular Algorithmics is about <a data-mce-href="en.wikipedia.org/wiki/Bayesian_poisoning" href="https://www.tumblr.com/edit/en.wikipedia.org/wiki/Bayesian_poisoning">Bayesian Poisoning</a>.
+ This is a heuristic strategy dating from the late 1990s, and involves 
+the intentional degradation of e-mail spam filters (typically <a data-mce-href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier" href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">naive Bayesian models</a>)
+ by spammers [1]. Poisoning strategies consist of Type I (intentionally 
+increasing the number of false positives) and Type II (embedding common 
+English words into a Spam message) attacks.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-DUa9udXdqFQ/U-gI_rG9svI/AAAAAAAAHdE/TTRqjx3j02U/s1600/tumblr_n9gfoa63FR1ru0x63o3_1280.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-DUa9udXdqFQ/U-gI_rG9svI/AAAAAAAAHdE/TTRqjx3j02U/s1600/tumblr_n9gfoa63FR1ru0x63o3_1280.jpg" height="320" width="289" /></a></div>
+<div style="text-align: center;">
+<br /></div>
+<br />
+[1] Accettura, R. &nbsp; <a data-mce-href="robert.accettura.com/blog/2007/01/29/bayesian-spam-filter-poisoning-with-rss/comment-page-1/" href="https://www.tumblr.com/edit/robert.accettura.com/blog/2007/01/29/bayesian-spam-filter-poisoning-with-rss/comment-page-1/">Bayesian Span Filter Poisoning with RSS</a>. Fun with Wordage blog, Januiary 29 (2007).<br />
+<br />
+[2] Eckleberry, A. &nbsp; <a data-mce-href="http://www.itproportal.com/2006/08/21/what-is-the-effect-of-bayesian-poisoning/" href="http://www.itproportal.com/2006/08/21/what-is-the-effect-of-bayesian-poisoning/">What is the effect of Bayesian Poisoning?</a> Security News blog, August 26 (2006).<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/-zmEvhiu5rlQ/U-gJeG-KS5I/AAAAAAAAHdM/k09QIbNDPgs/s1600/tumblr_na2li7Xg421ru0x63o2_500.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-zmEvhiu5rlQ/U-gJeG-KS5I/AAAAAAAAHdM/k09QIbNDPgs/s1600/tumblr_na2li7Xg421ru0x63o2_500.jpg" height="400" width="355" /></a></div>
+&nbsp;&nbsp;<style type="text/css">P { margin-bottom: 0.08in; }A:link {  }</style>
+
+
+<br />
+This edition of Popular Algorithmics is a throwback to the 1990s. 7 August of 2014 was, according to Microsoft's "The Fire Hose"
+blog, the <a href="http://blogs.microsoft.com/firehose/2014/08/07/throwback-thursday-microsoft-com-among-the-earliest-commercial-websites-has-been-on-the-web-for-20-years/">20th
+anniversary of Microsoft's first website</a>. Microsoft 1.0 was
+originally <a href="http://www.gmanetwork.com/news/story/373950/scitech/technology/microsoft-presents-version-1-0-of-its-website-for-throwbackthursday">intended
+to be a low-res information portal</a>. Interesting foray into what
+was to come.<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-XzR-Zll3Ja8/U-gKWpUeC_I/AAAAAAAAHdU/TmRQV2Rk5mk/s1600/tumblr_n9hq32tfjU1ru0x63o2_500.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-XzR-Zll3Ja8/U-gKWpUeC_I/AAAAAAAAHdU/TmRQV2Rk5mk/s1600/tumblr_n9hq32tfjU1ru0x63o2_500.gif" height="320" width="400" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+&nbsp;&nbsp;
+
+
+ 
+ 
+ 
+ <style type="text/css">P { margin-bottom: 0.08in; }A:link {  }</style>
+
+
+</div>
+Quasi-algorithmic word of the day: <a href="http://en.wikipedia.org/wiki/Sockpuppet_%28Internet%29">sockpuppetry</a>.
+Sockpuppetry is the practice of inventing an deceptive identity for
+one’s avatar in a virtual world. As with <a href="http://bradly-alicea.tumblr.com/post/93176465761/this-installment-of-popular-algorithmics-is-about">Bayesian
+Poisoning</a>, sockpuppetry comes in two flavors: type I (a phony
+persona different from the creator is used) and Type II (where
+obfuscation of identity is the only requirement). Unlike Bayesian
+Poisoning, however, Sockpuppetry can be done by a live person and not
+a bot. <br />
+<br />
+Seife, C. &nbsp; <a href="http://www.wired.com/2014/07/virtual-unreality-the-online-sockpuppets-that-trick-us-all/?mbid=social_fb">The
+Weird Reasons Why People Make Up False Identities on the Internet</a>.
+Wired, July 29 (2014) and the book <em><a href="http://www.penguin.com/book/virtual-unreality-by-charles-seife/9780670026081">Virtual
+Unreality</a></em>.<br />
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-phNPpzDTz5A/U_OPtl1vM_I/AAAAAAAAHf0/pzmPlP0xig0/s1600/cacti.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-phNPpzDTz5A/U_OPtl1vM_I/AAAAAAAAHf0/pzmPlP0xig0/s1600/cacti.png" height="155" width="400" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="MsoNormal">
+<span style="background: white; font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 115%;">This
+edition of<span class="apple-converted-space">&nbsp;</span></span><span style="font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 115%;"><a data-mce-href="http://bradly-alicea.tumblr.com/tagged/popular-algorithmics" href="http://bradly-alicea.tumblr.com/tagged/popular-algorithmics"><span style="background: white; color: black; mso-themecolor: text1;">Popular Algorithmics</span></a><span style="background: white;">&nbsp;is an introduction to cactus graphs [1].<span class="apple-converted-space">&nbsp;</span></span><a data-mce-href="http://mathworld.wolfram.com/CactusGraph.html" href="http://mathworld.wolfram.com/CactusGraph.html"><span style="background: white; color: black; mso-themecolor: text1;">Wolfram Mathworld
+defines cactus graphs</span></a><span class="apple-converted-space"><span style="background: white;">&nbsp;</span><span style="background: white;">as a connected graph where any two graph cycles have
+no edges in common. This is similar to the leaves of a botanical cactus. Cactus
+graph topologies are an instance of a<span class="apple-converted-space">&nbsp;</span></span></span><a data-mce-href="http://en.wikipedia.org/wiki/Block_graph" href="http://en.wikipedia.org/wiki/Block_graph"><span style="background: white; color: black; mso-themecolor: text1;">block graph</span></a><span style="background: white;">, in
+which every connected component constitutes a<span class="apple-converted-space">&nbsp;</span></span><a data-mce-href="http://en.wikipedia.org/wiki/Clique_(graph_theory)" href="http://en.wikipedia.org/wiki/Clique_(graph_theory)"><span style="background: white; color: black; mso-themecolor: text1;">clique</span></a><span class="apple-converted-space"><span style="background: white;">&nbsp;</span><span style="background: white;">or a<span class="apple-converted-space">&nbsp;</span></span></span><a data-mce-href="http://en.wikipedia.org/wiki/Graph_cycle" href="http://en.wikipedia.org/wiki/Graph_cycle"><span style="background: white; color: black; mso-themecolor: text1;">cycle</span></a><span style="background: white;">. The
+cactus representation can be used for a<span class="apple-converted-space">&nbsp;</span></span><a data-mce-href="http://drops.dagstuhl.de/opus/volltexte/2014/4470/pdf/28.pdf" href="http://drops.dagstuhl.de/opus/volltexte/2014/4470/pdf/28.pdf"><span style="background: white; color: black; mso-themecolor: text1;">variety of applications</span></a><span style="background: white;">, from modeling wireless networks to hierarchical
+tree building.</span><o:p></o:p></span></div>
+<div class="MsoNormal">
+<span style="font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 115%;"><span style="background: white;"><br /></span></span></div>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-I-F-3YVPwRU/U_OQQYHb6FI/AAAAAAAAHf8/LXZ294A6aOo/s1600/cactus-graphing.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-I-F-3YVPwRU/U_OQQYHb6FI/AAAAAAAAHf8/LXZ294A6aOo/s1600/cactus-graphing.png" height="400" width="332" /></a></div>
+<div class="MsoNormal" style="text-align: center;">
+<span style="font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 115%;"><span style="background: white;"><br /></span></span></div>
+<div class="MsoNormal" style="text-align: left;">
+<span style="font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 115%;"><span style="background: white;">[1]&nbsp;</span></span><span style="font-family: Times New Roman, serif;"><span style="line-height: 18.399999618530273px;">Lima, M. &nbsp; <a href="http://www.amazon.com/The-Book-Trees-Visualizing-Knowledge/dp/1616892188">The Book of Trees: Visualizing Branches of Knowledge</a>. Princeton Press (2014).</span></span></div>
+<div style="text-align: center;">
+<br /></div>
+<br />
+<br />
+<br />
+<div style="text-align: center;">
+</div>
+</div>
+<div class="leftcolumn">
+    <div class="card">
+      <A HREF="http://syntheticdaisies.blogspot.com/"><img src="https://user-images.githubusercontent.com/38323286/60280668-ff8fb500-98c8-11e9-84db-a9211ea388de.png"></A>&nbsp&nbsp&nbsp&nbsp<A HREF="http://synthetic-daisies.github.io/"><img src="https://user-images.githubusercontent.com/38323286/60280623-eb4bb800-98c8-11e9-926e-97bb5d707af0.png"></A>&nbsp&nbsp&nbsp&nbsp<A HREF="https://figshare.com/collections/Synthetic_Daisies_blog_posts_printable_citable_/4556618"><img src="https://user-images.githubusercontent.com/38323286/60280507-ad4e9400-98c8-11e9-9392-52012cda4d67.png"></A>&nbsp&nbsp&nbsp&nbsp<A HREF="https://twitter.com/Orthogonal_Lab"><img src="https://user-images.githubusercontent.com/38323286/60280736-28b04580-98c9-11e9-9a17-427a40eeefcd.png"></A>&nbsp&nbsp&nbsp&nbsp<A HREF="https://orthogonal-research.slack.com"><img src="https://user-images.githubusercontent.com/38323286/60280711-19c99300-98c9-11e9-9148-304e1213058f.png"></A>
+      <p>Providing cybernetic-adjacent fruits since 2008.</p>
+    </div>
+    <div class="card">
+      <h3>Featured Posts</h3>
+	    <IMG SRC="Images/CoE-58-logo-w-albedo.png" HEIGHT = 150 WIDTH = 150>
+	    <div class="fakeimg"><A HREF="https://figshare.com/articles/Carnival_of_Evolution_58_the_future_of_evolution/661698">Carnival of Evolution #58</A>: visions of the evolutionary future</div><br>
+	<IMG SRC="Images/modern-humans.jpg" HEIGHT = 75 WIDTH = 150>
+      <div class="fakeimg"><A HREF="http://syntheticdaisies.blogspot.com/2014/05/playing-long-game-of-human-biological.html">Playing the Long Game of Human Biological Variation</A></div><br>
+	 <IMG SRC="Images/OpenAccessWeek_logo.jpg" HEIGHT = 50 WIDTH = 180>
+		 <div class="fakeimg"><A HREF="https://syntheticdaisies.blogspot.com/search/label/OAweek">Open Access Week Series</A></div><br>
+	<IMG SRC="Images/predictions-projections.png" HEIGHT = 79 WIDTH = 110>
+      <div class="fakeimg"><A HREF="https://syntheticdaisies.blogspot.com/2013/02/projective-models-new-explanatory.html">Projective Models: a new explanatory paradigm</A>
+</div><br>
+	<IMG SRC="Images/38323286.png" HEIGHT = 80 WIDTH = 80>
+      <div class="fakeimg"><A HREF="https://syntheticdaisies.blogspot.com/2018/05/rise-of-alt-research-program.html">Rise of the Alt-research Program</A></div><br>
+	<IMG SRC="Images/DK.png" HEIGHT = 110 WIDTH = 105>
+      <div class="fakeimg"><A HREF="https://syntheticdaisies.blogspot.com/2013/12/dragons-sandpiles-and-cavefish.html">Dragons, Sandpiles, and Cavefish: an evolutionary inquiry</A></div><br>
+	<IMG SRC="Images/pong-breakout.png" HEIGHT = 74 WIDTH = 156>
+      <div class="fakeimg"><A HREF="https://syntheticdaisies.blogspot.com/2018/04/video-game-complexity-short-overview.html">Video Game Complexity: a short overview</A></div><br>
+        <IMG SRC="Images/tumblr_nc0xzkGld61ru0x63o1_1280.jpg" HEIGHT = 114 WIDTH = 156>
+      <div class="fakeimg"><A HREF="https://syntheticdaisies.blogspot.com/2013/08/fear-and-loathing-in-robotistan.html">Fear and Loathing in Robotistan</A></div><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</div>
+</div>
+<div class="footer">
+  <h4>Brought to you by Orthogonal Research and Education Laboratory</h4><BR>
+  <center><img src="https://user-images.githubusercontent.com/38323286/60280776-3a91e880-98c9-11e9-83c2-48ab583ad3ed.png" HEIGHT = 80 WIDTH = 100></CENTER>
+</div>
+</body>
+</html>
